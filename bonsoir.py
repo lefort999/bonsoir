@@ -10,7 +10,16 @@ def home():
             contenu = f.read()
     except Exception as e:
         contenu = f"Erreur lors de la lecture du fichier : {e}"
-    return f"<html><body><h1>{contenu}</h1></body></html>"
+
+    return f"""
+    <html>
+    <head><title>Bonsoir</title></head>
+    <body>
+        <h1>{contenu}</h1>
+        <img src="/static/severin.jpg" alt="Severin" style="max-width:500px;">
+    </body>
+    </html>
+    """
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
