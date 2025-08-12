@@ -40,6 +40,7 @@ def home():
         <div class="card">
             <h1>{contenu}</h1>
             <img src="/static/severin.jpg" alt="Severin">
+            <img src="/static/medaille.jpg" alt="medaille">
         </div>
     </body>
     </html>
